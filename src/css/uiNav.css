@@ -1,0 +1,90 @@
+.uiNav{
+    margin-top:20px;
+    display: block;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.uiNavItem{
+    padding-top:10px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.uiNavLink{
+    display: block;
+    border-radius: 3px;
+    margin:0 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    padding:5px 10px;
+    text-transform: capitalize;
+}
+
+.uiNavLinkActive{
+    background-color: #00bcd4;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4);
+    color:#fff;
+}
+.uiNavIcon{
+    font-size: 16px;
+    float: left;
+    margin-right: 10px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.uiNavContent{
+    margin:0;
+    line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    height: auto;
+    white-space: nowrap;
+}
+
+.uiNavBar{
+    padding-top:10px;
+    position: absolute;
+    width: 100%;
+    z-index: 1029;
+    border-radius: 0;
+    padding:0.625rem 0;
+    margin-bottom:20px;
+    color:#555;
+    display: flex;
+    align-items: center;
+}
+
+.uiContainerFluid{
+    width:100%;
+    padding:0 15px 0 15px;
+}
+
+.uiNavBarWrapper{
+    align-items: center;
+}
+
+.uiNavBarBrand{
+    position: relative;
+    height: 50px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    padding:0.625rem 0;
+    font-weight: 300;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+.uiMainPanelContent{
+    margin-top:40px;
+    padding:30px 15px;
+    min-height: calc(100vh - 123px);
+}

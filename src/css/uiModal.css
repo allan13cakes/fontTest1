@@ -1,0 +1,77 @@
+.uiModal{
+    position: fixed;
+    z-index: 6000;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10vh;
+    animation: animFadeIn 150ms ease-in;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@-webkit-keyframes animFadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animFadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.uiModalContent{
+    border:1px solid #d9d9d9;
+    box-shadow: 0 40px 64px 0 rgba(59, 79, 93, 0.1),
+    0 24px 32px 0 rgba(59, 79, 93, 0.1),
+    0 16px 16px 0 rgba(59, 79, 93, 0.1),
+    0 8px 8px 0 rgba(59, 79, 93, 0.1),
+    0 4px 4px 0 rgba(59, 79, 93, 0.1),
+    0 2px 2px 0 rgba(59, 79, 93, 0.1);
+    border-color: #c4cace;
+    border-top-color: #e2e5e7;
+    border-bottom-color:#a7b0b6;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index:8000;
+    min-width: 400px;
+    animation: modalContent 350ms cubic-bezier(0.34,1.61,0.7,1);
+}
+
+@keyframes modalContent {
+    0%{
+        opacity: 0;
+        transform: translateY(32px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close{
+    background-color:rgba(255, 255, 255, 0.9);
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+
+.close:hover,.close:focus{
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
+}

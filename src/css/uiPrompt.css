@@ -1,0 +1,32 @@
+.uiCenteredPrompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    padding: 10px;
+}
+
+.uiCenteredPromptItem+.uiCenteredPromptItem {
+    margin-top: 5px;
+}
+
+.uiCenteredPromptIcon {
+    font-size: 60px;
+    line-height: 0;
+    color: #BCD2DA;
+}
+
+.uiCenteredPromptLabel {
+    color: #86969C;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.uiCenteredPromptDetails {
+    color: #86969C;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}

@@ -1,0 +1,237 @@
+button{
+    background: none;
+    padding:0;
+    margin:0;
+    outline: none;
+    font-size: inherit;
+}
+
+.uiButton{
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
+    text-decoration: none;
+    border:1px solid transparent;
+    text-align: center;
+    transition: all 250ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    white-space: nowrap;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 4px;
+    min-width: 112px;
+}
+.uiButton:hover:not(:disabled){
+    transform: translateY(-1px);
+}
+.uiButton:hover:not(:disabled), .uiButton:focus{
+    text-decoration: underline;
+}
+.uiButton:focus{
+    animation: uiButtonActive 250ms cubic-bezier(0.34,1.61,0.7,1);
+}
+.uiButton:disabled{
+    color:#c5c5c5;
+    border-color:#c5c5c5;
+    pointer-events:none;
+}
+
+.uiButtonSmall{
+    height: 32px;
+    line-height: 32px;
+}
+
+.uiButtonContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 12px;
+}
+
+.uiButtonContent > * + * {
+    margin-left: 8px;
+}
+
+.uiButtonIcon{
+    flex-shrink: 0;
+}
+
+.uiButtonText{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.uiButtonPrimary{
+    color:#0079A5;
+    border-color:#0079A5;
+}
+.uiButtonPrimary:enabled{
+    box-shadow: 0 2px 2px -1px rgba(50, 98, 116, 0.3);
+}
+.uiButtonPrimary:enabled:hover, .uiButtonPrimary:enabled:focus{
+    box-shadow: 0 4px 8px 0 rgba(50, 98, 116, 0.15), 0 2px 2px -1px rgba(50, 98, 116, 0.3);
+    background-color: rgba(0, 121, 165, 0.1);
+}
+
+.uiButtonPrimaryFill{
+    background-color: #0079A5;
+    border-color:#0079A5;
+    color:#FFF;
+}
+.uiButtonPrimaryFill:enabled:hover, .uiButtonPrimaryFill:enabled:focus{
+    background-color:#00668c;
+    border-color:#00668c;
+}
+
+
+
+.uiButtonSecondary{
+    color:#017F75;
+    border-color:#017F75;
+}
+.uiButtonSecondary:enabled{
+    box-shadow: 0 2px 2px -1px rgba(39, 89, 85, 0.3);
+}
+.uiButtonSecondary:enabled:hover, .uiButtonSecondary:enabled:focus{
+    box-shadow: 0 4px 8px 0 rgba(39, 89, 85, 0.15), rgba(39, 89, 85, 0.3);
+    background-color: rgba(1, 127, 117, 0.1);
+}
+
+.uiButtonSecondaryFill{
+    background-color: #017F75;
+    border-color:#017F75;
+    color:#FFF;
+}
+.uiButtonSecondaryFill:enabled:hover, .uiButtonSecondaryFill:enabled:focus{
+    background-color:#01665e;
+    border-color:#01665e;
+}
+
+
+.uiButtonWarning{
+    columns: #a9600a;;
+    border-color:#E5830E;
+}
+.uiButtonWarning:enabled{
+    box-shadow: 0 2px 2px -1px rgba(156, 125, 87, 0.3);
+}
+.uiButtonWarning:enabled:hover, .uiButtonWarning:enabled:focus{
+    box-shadow: 0 4px 8px 0 rgba(156, 125, 87, 0.15), 0 2px 2px -1px rgba(156, 125, 87, 0.3);
+    background-color: rgba(0, 121, 165, 0.1);
+}
+
+.uiButtonWarningFill{
+    background-color: #E5830E;
+    border-color:#E5830E;
+    color:#000;
+}
+.uiButtonWarningFill:enabled:hover, .uiButtonWarningFill:enabled:focus{
+    background-color:#cd750d;
+    border-color:#cd750d;
+}
+
+.uiButtonDanger{
+    color:#A30000;
+    border-color:#A30000;
+}
+.uiButtonDanger:enabled{
+    box-shadow: 0 2px 2px -1px rgba(114, 49, 49, 0.3);
+}
+.uiButtonDanger:enabled:hover, .uiButtonDanger:enabled:focus{
+    box-shadow: 0 4px 8px 0 rgba(114, 49, 49, 0.15), 0 2px 2px -1px rgba(114, 49, 49, 0.3);
+    background-color: rgba(0, 121, 165, 0.1);
+}
+
+.uiButtonDangerFill{
+    background-color: #A30000;
+    border-color:#A30000;
+    color:#FFF;
+}
+.uiButtonDangerFill:enabled:hover, .uiButtonDangerFill:enabled:focus{
+    background-color:#8a0000;
+    border-color:#8a0000;
+}
+
+
+.uiButtonEmpty{
+    display: inline-block;
+    cursor:pointer;
+    height:40px;
+    line-height: 40px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    text-align: center;
+    transition: all 250ms cubic-bezier(0.34,1.61,0.7,1);
+    white-space: nowrap;
+    max-width: 100%;
+    vertical-align: middle;
+    border-color: transparent;
+    box-shadow: none;
+    transition-timing-function: ease-in;
+    transition-duration: 150ms;
+}
+.uiButtonEmpty:hover:not(:disabled){
+    transform: translateY(-1px);
+}
+.uiButtonEmpty:hover:not(:disabled), .uiButtonEmpty:focus{
+    text-decoration: underline;
+}
+.uiButtonEmpty:focus{
+    animation: uiButtonActive 250ms cubic-bezier(0.34,1.61,0.7,1);
+}
+.uiButtonEmpty:active{
+    transform: translateY(1px);
+}
+.uiButtonEmpty:disabled{
+    color:#c5c5c5;
+    pointer-events: none;
+}
+
+
+.uiButtonEmptyPrimary{
+    color:#0079A5;
+}
+
+
+
+@keyframes uiButtonActive{
+    50% {
+        transform: translateY(1px);
+    }
+}
+
+.uiIcon{
+    display: inline-block;
+    vertical-align: middle;
+    fill:currentColor;
+}
+
+.uiIconMedium{
+    font-size: 20px;
+}
+
+.uiLoadingSpinner{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #D9D9D9;
+    border-color: #0079A5 #D9D9D9 #D9D9D9 #D9D9D9;
+    animation: uiLoadingSpinner .6s infinite linear;
+}
+
+.uiLoadingSpinnerMedium{
+    width:16px;
+    height: 16px;
+    border-width: 1px;
+}
+
+@keyframes uiLoadingSpinner{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

@@ -1,0 +1,53 @@
+.uiBreadCrumb {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.uiBreadCrumbLine {
+    flex-shrink: 0;
+    pointer-events: none;
+    display: inline-block;
+    margin-right: 8px;
+    width: 1px;
+    height: 16px;
+    transform: translateY(0.2em) rotate(15deg);
+    background: #D9D9D9;
+}
+
+.uiLink {
+    text-align: left;
+}
+
+.uiLink:hover {
+    text-decoration: underline;
+}
+
+.uiLink:focus {
+    text-decoration: underline;
+    background: #e6f2f6;
+}
+
+.uiLinkSubdued {
+    color: #666;
+}
+
+.uiLinkSubdued:hover {
+    color: #4d4d4d;
+}
+
+.uiLinkSubdued:focus {
+    outline: solid 3px rgba(102, 102, 102, 0.1);
+    background-color: rgba(102, 102, 102, 0.1);
+}
+
+.uiBreadcrumb {
+    display: inline-block;
+}
+
+.uiBreadcrumb:not(.uiBreadcrumbLast) {
+    margin-right: 8px;
+}
+
+.uiBreadcrumbLast {
+    font-weight: 600;
+}

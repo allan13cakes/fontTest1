@@ -1,0 +1,41 @@
+.uiCard{
+    box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border:0;
+    margin-bottom: 30px;
+    margin-top:30px;
+    border-radius: 6px;
+    color:#333333;
+    background:#fff;
+    width:100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    font-size: 0.875rem;
+}
+.uiCardHeader{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    margin:-20px 15px 0 15px;
+    padding:5px 5px 15px 5px;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+    background: linear-gradient(60deg,#0079A5,#00bcd4);
+}
+
+
+.uiCardHeaderPrimary{
+    text-align: right;
+    position: relative;
+    color:#fff;
+}
+.uiCardBody{
+    padding:0.9375rem 20px;
+    position: relative;
+    flex:1 1 auto;
+}
+
+.uiCardFooter{
+    padding: 0.9375rem 20px;
+}
